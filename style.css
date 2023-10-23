@@ -20,10 +20,10 @@ nav.menu-lateral {
     top: 0;
     left: 0;
     overflow: hidden;
-    transition: .2s;
+    transition: .5s;
 }
 
-nav.menu-lateral:expandir{
+nav.menu-lateral.expandir{
     width: 300px;
 }
 
@@ -67,10 +67,16 @@ ul li.item-menu a{
 }
 
 ul li.item-menu a .text-link {
-    margin-left: 40px;
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
 
 }
 
+nav.menu-lateral.expandir  .text-link{
+    margin-left: 40px;
+    opacity: 1;
+}
 ul li.item-menu a .icon> i{
     font-size: 30px;
     margin-left: 10px;
