@@ -1,12 +1,32 @@
-*{
-    list-style: none !important;
-    text-decoration: none !important;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.container{
-    padding: 35px;
+.agenda-content {
+    display: flex;
 }
 
-.margin {
-    margin: 20%;
+.container {
+    width: 100%;
+    max-width: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    min-height: 400px;
+    box-shadow: 1px 1px 5px black;
+    padding: 2rem;
+}
+
+.left , .right{
+    width: 100%;
+    height: 100%;
+
+}
+
+.left {
+    box-shadow: 1px 0px 5px black;
 }
