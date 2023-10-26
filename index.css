@@ -3,53 +3,10 @@
     text-decoration: none !important;
 }
 
-.btns {
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    display: flex;
-    padding: 15px;
+.container{
+    padding: 35px;
 }
 
-.cards-inf{
-    overflow: hidden;
-}
-
-.mini-card {
-    width: 76%;
-    display: flex;
-
-}
-
-.cards-inf img{
-    width: 100%;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.hist {
-    width: 80vh;
-    height: 60vh;
-    overflow: hidden;
-    background-color: #c4c4c4;
-}
-
-a{
-    color: black;
-}
-
-.card {
-    display: flex;
-    position: relative;
-    width: 165vh;
-    height: 70vh;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    padding: 35px 35px;
-    overflow: hidden;
-}
-
-.stro {
-    width: 44%;
-    display: flex;
+.margin {
+    margin: 20%;
 }
