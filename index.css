@@ -10,23 +10,71 @@
 
 .container {
     width: 100%;
+    background-color: beige;
+    height: auto;
+    min-height: 400px;
+    height: auto;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 10%;
+
+
+   /* width: 100%;
     max-width: 1000px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     height: auto;
     min-height: 400px;
     box-shadow: 1px 1px 5px black;
     padding: 2rem;
+    background-color: beige;*/
 }
 
 .left , .right{
     width: 100%;
     height: 100%;
+    
 
 }
 
 .left {
     box-shadow: 1px 0px 5px black;
+}
+
+.right .cards {
+    grid-template-columns: repeat(2, auto);
+    display: grid;
+    margin-top: 3%;
+    gap: 6%;
+}
+
+.right h2{
+    display: grid;
+    justify-content: space-around;
+}
+
+.right .minicards  .title{
+    width: 0;
+    margin: 2%;
+}
+
+.right .minicards {
+    background-color: blueviolet;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    border-radius: 20px;
+    margin: 5%;
+  
+}
+.right .minicards img {
+    width: 100px;
+}
+
+.right .minicards p {
+    margin-top: 13%;
+    padding: auto;
+    
 }
