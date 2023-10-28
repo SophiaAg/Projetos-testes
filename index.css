@@ -9,14 +9,13 @@
 }
 
 .container {
-    width: 100%;
+    width: 80%;
     background-color: beige;
-    height: auto;
     min-height: 400px;
     height: auto;
     padding: 2rem;
-    margin: auto;
-    margin-top: 10%;
+    margin: 5% auto auto;
+
 
 
    /* width: 100%;
@@ -40,7 +39,13 @@
 }
 
 .left {
-    box-shadow: 1px 0px 5px black;
+    box-shadow: black 1px 0px 5px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: #818156;
+    width: 45%;
+    margin-left: 3%;
+
 }
 
 .right .cards {
@@ -48,6 +53,7 @@
     display: grid;
     margin-top: 3%;
     gap: 6%;
+    justify-content: center;
 }
 
 .right h2{
@@ -74,7 +80,7 @@
 }
 
 .right .minicards p {
-    margin-top: 13%;
+    margin-top: 10%;
     padding: auto;
     
 }
