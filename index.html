@@ -14,12 +14,46 @@
             <div class="agenda-content">
                 <div class="left">
                     <div class="buttons">
-                        <button>Agenda</button>
-                        <button>Historico</button>
+                        <button class="botao historico" id="btn-hist">Historico</button>
+                        <button class="botao agenda" id="btn-agend">Agenda</button>
+
                     </div>
-                    <p>
-                        Veja seus serviços agendados para os proximos dias. Faça o login agora para ter acesso a isto.
-                    </p>
+                    <div id="historico" style="display: block;">
+                        <p>
+                            Veja seu histórico de acesso feito nos ultimos dias. Faça o login agora para ter acesso a
+                            isto.
+                        </p>
+
+                        <img style="width: 100%;" src="https://cdn-icons-png.flaticon.com/512/32/32223.png" alt="">
+                        <!-- Conteúdo do histórico aqui -->
+                    </div>
+                    <div id="agenda" style="display: none;">
+                        <p>
+                            Veja seus serviços agendados para os proximos dias. Faça o login agora para ter acesso a
+                            isto.
+                        </p>
+
+                        <img style="width: 100%;" src="https://cdn.icon-icons.com/icons2/935/PNG/512/weekly-calendar-outline-event-interface-symbol_icon-icons.com_73108.png" alt="">
+                        <!-- Conteúdo da agenda aqui -->
+                    </div>
+
+                    <script>
+                        const btnHist = document.getElementById('btn-hist');
+                        const btnAgend = document.getElementById('btn-agend');
+                        const divHistorico = document.getElementById('historico');
+                        const divAgenda = document.getElementById('agenda');
+
+                        btnHist.addEventListener('click', () => {
+                            divHistorico.style.display = 'block';
+                            divAgenda.style.display = 'none';
+                        });
+
+                        btnAgend.addEventListener('click', () => {
+                            divAgenda.style.display = 'block';
+                            divHistorico.style.display = 'none';
+                        });
+                    </script>
+
                 </div>
                 <div class="right">
                     <h2>Agenda seu Serviço.</h2>
